@@ -38,11 +38,11 @@ bool Date::IsOlder(Date date_)
 
 string Date::getDate()
 {
-    string date = to_string(year) + "/" + to_string(month) + "/" + to_string(day);
+    string date = to_string(month) + "/" + to_string(day) + "/" + to_string(year);
     return date;
 }
 
-void Date::setDate(int day_, int month_, int year_)
+void Date::setDate(int month_, int day_, int year_)
 {
     day = day_;
     month = month_;
